@@ -28,6 +28,10 @@ Interact directly with your Turso database using the libSQL client:
 
 - **Execute Query**: Run SQL queries against your Turso database with support for parameterized queries.
 - **Execute Batch**: Run multiple SQL queries in sequence.
+- **Insert Rows**: Insert data into tables with support for data types (e.g., `id:int,name:text`).
+- **Update Rows**: Update table data with WHERE clause filtering.
+- **List Tables**: Get a list of all tables in your database.
+- **Describe Table**: View schema information about a specific table.
 
 ## Authentication
 
@@ -45,6 +49,16 @@ This node requires Turso Database credentials:
 3. Select "Execute Query" as the operation
 4. Enter your SQL query (e.g., `SELECT * FROM users`)
 5. Configure credentials and run the workflow
+
+### Insert Data into a Table
+
+1. Create a new workflow
+2. Add the Turso node
+3. Select "Insert Rows" as the operation
+4. Enter your table name and column definitions
+5. Choose data source (Input Items or Manual Input)
+6. Provide values to insert
+7. Configure credentials and run the workflow
 
 ### Execute Multiple Queries in Batch
 
