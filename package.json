@@ -34,7 +34,6 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/TursoApi.credentials.js",
       "dist/credentials/TursoDb.credentials.js"
     ],
     "nodes": [
