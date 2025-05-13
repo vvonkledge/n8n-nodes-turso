@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-turso",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "n8n node for Turso database API",
   "keywords": [
     "n8n-community-node-package",
@@ -41,7 +41,7 @@
     ]
   },
   "dependencies": {
-    "@libsql/client": "^0.5.6"
+    "@libsql/client": "^0.15.5"
   },
   "devDependencies": {
     "@types/express": "^4.17.14",
