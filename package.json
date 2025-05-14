@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-turso",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "n8n node for Turso database API",
   "keywords": [
     "n8n-community-node-package",
@@ -12,8 +12,8 @@
   "license": "MIT",
   "homepage": "https://n8n.io",
   "author": {
-    "name": "n8n Community",
-    "email": "info@n8n.io"
+    "name": "vvonkledge",
+    "email": "developer@vvonkledge.com"
   },
   "repository": {
     "type": "git",
