@@ -6,6 +6,7 @@ import {
 	NodeOperationError,
 	INodePropertyOptions,
 	ILoadOptionsFunctions,
+	NodeConnectionType,
 } from 'n8n-workflow';
 
 import { createClient, LibsqlError } from '@libsql/client';
@@ -70,8 +71,9 @@ export class Turso implements INodeType {
 		defaults: {
 			name: 'Turso',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		usableAsTool: true,
+		inputs: [NodeConnectionType.Main],
+		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
 				name: 'tursoDb',
@@ -1162,7 +1164,7 @@ export class Turso implements INodeType {
 				}
 
 				const executionData = this.helpers.constructExecutionMetaData(
-					this.helpers.returnJsonArray(responseData),
+					this.helpers.returnJsonArray(responseData ? { ...responseData } : {}),
 					{ itemData: { item: i } },
 				);
 				returnData.push(...executionData);
